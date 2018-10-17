@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+　　font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+　　animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+a {
+  text-decoration: none;
+}
+ .clear {
+  clear: left;
+}   
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(http://switch-box.net/wp-content/uploads/2013/03/free-wood-patterns-01.jpg);
+  background-size: contain;
+  color: red;
+  text-align: center;
+  font-family:"Impact";
+  font-size: 50px;    
+}
+
+.message-wrapper{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.message {
+  background-color: #5dca88;
+  padding: 15px 40px;
+  cursor: pointer;
+　box-shadow: 0 7px #1a7940;
+}
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+.twitter {
+  background-color: #55acee;
+}
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+header {
+  height: 65px;
+  width: 100%;
+  background-color:rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;    
+}
+.header-left{
+    float: left;
+}
+.header-left a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: red;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  font-size: 45px;
+  font-family: "impact";    
+}
+.header-right{
+    float: right;
+    margin-right: -25px;
+    font-family: "impact";
+}
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: red;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  font-family: "impact";   
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.menu-icon{
+    color: #000000;
+    float: right;
+    display: none;
+}
+
+.img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-wrap:before {
+  animation: img-wrap 2s cubic-bezier(.4, 0, .2, 1) forwards;
+  background: #fff;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes img-wrap {
+  100% {
+    transform: translateX(100%);
+  }
+}
+input,textarea{
+    width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:15px;
+  border:1px solid 
+}
+
+form {
+  background-color: white;
+    opacity: 0.9;
+}
+
+.text {
+  display: block;
+  margin: 10px;
+  border:2px solid gray;
+  width:500px;
+}
+
+input {
+  height:30px;
+    text-align: center
+}
+
+textarea {
+  height:120px;
+}
+ 
+}
+#btn {
+  color: black;
+  background-color: red;
+  width:100px;
+  height:30px;
+  cursor: pointer;
+  margin:10px;
+}
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+}
+#page-top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: #999;
+}

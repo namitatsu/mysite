@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="urf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.textillate.js"></script>
+    <script src="jquery.lettering.js"></script>
+
+
+</head>
+
+<body>
+    <div claas=header>
+        <div class="container">
+            <div class="header-left">
+                <a href="profile.html">portfolio</a>
+            </div>
+        </div>
+
+
+        <div class="header-right">
+            <a href="home.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+            <a href="access.html">お問い合わせ</a>
+        </div>
+    </div>
+    <div class="top-wrapper">
+        <h1 id="title">TATSUYA NAMIZAKI</h1>
+
+    </div>
+    <div id="language-wrapper">
+        <div id="container">
+            <div id="heading">
+                <h2 class="language-title">PROFILE</h2>
+                <h3 class="language-text">私の名前は浪崎達也と言います。出身は愛知県です。年齢は２０歳で今年２１歳になります。私がヤンキーインターンに来た理由は工場での仕事に違和感を感じたことです。工場での仕事は、日々決められた数をただ作り安定はしていましたが働いている上司の姿を見てこのまま４０年間働くことができないと思い違和感を感じヤンキーインターンに来ました。
+                    続いて地元について少し紹介したいと思います。私の地元は豊橋という所です。
+                    豊橋は路面電車が通っている事とビックサンダーを作っている有楽製菓という会社がある事が特徴の市です。</h3>
+            </div>
+            <div class="img-wrap"><img src="http://img-cdn.jg.jugem.jp/04a/1477832/20140118_1135425.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="message-wrapper">
+        <div class="container">
+            <div class="heading">
+                <h2>私のプロフィールを見て気になった方はこちらをクリック!!</h2>
+            </div>
+            <a href="https://www.facebook.com/profile.php?id=100005347145925" class="btn facebook"><span class="fa fa-facebook"></span>Facebook</a>
+            <a href="https://twitter.com/zakinami1228" class="btn twitter"><span class="fa fa-twitter"></span>Twitter</a>
+        </div>
+    </div>
+    <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+        $(function() {
+            var topBtn = $('#page-top');
+            topBtn.hide();
+            //スクロールが100に達したらボタン表示
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+        $(function() {
+            var $allMsg = $('#title');
+            var $wordList = $('#title').html().split("");
+            $('#title').html("");
+            $.each($wordList, function(idx, elem) {
+                var newEL = $("<span/>").text(elem).css({
+                    opacity: 0
+                });
+                newEL.appendTo($allMsg);
+                newEL.delay(idx * 70);
+                newEL.animate({
+                    opacity: 1
+                }, 1100);
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
